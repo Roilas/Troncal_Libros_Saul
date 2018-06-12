@@ -8,7 +8,6 @@
 		<title>Pagina basica</title>
 	</h:head>
      <h:body>
- Esto es MI pagina, y si funciona prime faces ya podemos trabajar
  
  
  <h:form>
@@ -17,13 +16,13 @@
 		<p:panelGrid columns="2">
 		
 			<p:outputLabel value="Introduce el titulo del libro:"></p:outputLabel>
-			<p:inputText value="#{GestorLibros.Libro.titulo}"></p:inputText>
+			<p:inputText value="#{GestorLibros.libro.titulo}"></p:inputText>
 			
 			<p:outputLabel value="Introduce la fecha de publicacion:"></p:outputLabel>
-			<p:calendar pattern="dd/MM/yyyy HH:mm:ss" value="#{GestorLibros.Libro.fecha}"></p:calendar>
+			<p:calendar pattern="dd/MM/yyyy HH:mm:ss" value="#{GestorLibros.libro.fecha}"></p:calendar>
 			
 			<p:outputLabel value="Introduce el autor:"></p:outputLabel>
-			<p:inputText value="#{GstorLibros.Libro.autor}"></p:inputText>		
+			<p:inputText value="#{GestorLibros.libro.autor}"></p:inputText>		
 							
 		</p:panelGrid>
 		<p:commandButton value="Register" action="#{GestorLibros.Registrar}" update="messages"></p:commandButton>

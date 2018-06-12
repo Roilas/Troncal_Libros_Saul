@@ -1,5 +1,7 @@
 package com.TroncalLibrosSaul.prime.faces.beans;
 
+
+import java.io.Serializable;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
@@ -19,13 +21,13 @@ import com.TroncalLibrosSaul.Services.ServiciosLibros;
 
 @ManagedBean
 @SessionScoped
-public class GestorLibros {
+public class GestorLibros implements Serializable {
 	
 	
 	@ManagedProperty("#{GestorLibros}")
 	private ServiciosLibros OperacionesLibros;
 	
-	private Libro Libro = new Libro();
+	private Libro libro = new Libro();
 	
 	public ServiciosLibros getOperacionesLibros() {
 		return OperacionesLibros;
@@ -36,11 +38,11 @@ public class GestorLibros {
 	}
 
 	public Libro getLibro() {
-		return Libro;
+		return libro;
 	}
 
-	public void setLibro(Libro libro) {
-		Libro = libro;
+	public void setlibro(Libro libro) {
+		libro = libro;
 	}
 
 	
