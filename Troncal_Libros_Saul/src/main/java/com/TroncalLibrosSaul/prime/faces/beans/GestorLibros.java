@@ -50,6 +50,7 @@ public class GestorLibros implements Serializable {
 		
 		
 	System.out.println("Estas intentando registrar un libro");
+	System.out.println("El libro introducido es " + libro.getTitulo() + ". Escrito por " + libro.getAutor() + " en " + libro.getFecha());
 	}
 	
 	
